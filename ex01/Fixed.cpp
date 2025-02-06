@@ -7,13 +7,13 @@ Fixed::Fixed(): val(0)
 
 Fixed::Fixed(const int input)
 {
-	std::cout << "Int Constructor called" << std::endl;
+	std::cout << "Int Constructor called\n";
 	this->val = input << this->eight_val;
 }
 
 Fixed::Fixed(const float input)
 {
-	std::cout << "Float Constructor called" << std::endl;
+	std::cout << "Float Constructor called\n";
 	this->val = roundf(input * 256);
 }
 
@@ -50,7 +50,7 @@ void	Fixed::setRawBits(int const raw)
 
 float	Fixed::toFloat(void)const
 {
-	return ((float)this->val / 256);
+	return ((float)this->val/256);
 }
 
 int	Fixed::toInt(void)const
