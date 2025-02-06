@@ -34,10 +34,10 @@ class Fixed
 		Fixed operator--();
 		Fixed operator++(int);
 		Fixed operator--(int);
-		static Fixed &min(Fixed &first, Fixed &second);
-		static const Fixed &min(Fixed const &first, Fixed const &second);
-		static Fixed &max(Fixed &first, Fixed &second);
-		static const Fixed &max(Fixed const &first, const Fixed &second);
+		static Fixed &min(Fixed &a, Fixed &b);
+		static const Fixed &min(Fixed const &a, Fixed const &b);
+		static Fixed &max(Fixed &a, Fixed &b);
+		static const Fixed &max(Fixed const &a, const Fixed &b);
 };
 
 std::ostream	&operator<<(std::ostream &o, Fixed const &fixed);
