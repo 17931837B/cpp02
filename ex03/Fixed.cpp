@@ -8,7 +8,7 @@ Fixed::Fixed(): val(0)
 Fixed::Fixed(const int input)
 {
 	// std::cout << "Int Constructor called\n";
-	this->val = input << this->eight_val;
+	this->val = input * 256;
 }
 
 Fixed::Fixed(const float input)

@@ -4,7 +4,7 @@ INFILES = 	main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJFILES = $(INFILES:.cpp=.o)
 
-NAME = Now_were_talking
+NAME = BSP
 
 all: $(NAME)
 
