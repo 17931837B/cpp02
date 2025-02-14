@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tobaba <tobaba@student.42.fr>              #+#  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025-02-14 08:47:45 by tobaba            #+#    #+#             */
+/*   Updated: 2025-02-14 08:47:45 by tobaba           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "Fixed.hpp"
 
 Fixed::Fixed(): val(0)
@@ -8,7 +19,7 @@ Fixed::Fixed(): val(0)
 Fixed::Fixed(const int input)
 {
 	std::cout << "Int Constructor called\n";
-	this->val = input << this->eight_val;
+	this->val = input * 256;
 }
 
 Fixed::Fixed(const float input)
